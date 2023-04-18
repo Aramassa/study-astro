@@ -1,9 +1,11 @@
 import React from 'react'
 import Main from '../modules/app/main'
 
+const m = Main.singleton();
+
 export const Button = ()=>{
   return (
-    <button onClick={()=>{alert(new Main().test(8)) }}>
+    <button onClick={()=>{alert(m.test()) }}>
       hello
     </button>
   )
