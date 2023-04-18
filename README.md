@@ -25,6 +25,13 @@ https://www.twilio.com/ja/blog/react-choose-functional-components-jp
 
 [カスタムフックの使い方](https://qiita.com/cheez921/items/af5878b0c6db376dbaf0)
 
+## 0_3 カスタムフックを作成して、 App クラスを統合してみよう
+
+0_2 では最も単純なタイプのフックを使って、コンポーネント感を連動させてみた。
+今度は、アプリケーションをコントロールする App クラスと、 React の State クラスを統合してみよう。
+
+App が React 依存になってしまうのは、今回は許容。
+
 ## 1_1 サーバサイドと通信してみよう
 
 ページ内のコンテンツを、サーバサイド API と通信して更新する用にしてみよう
