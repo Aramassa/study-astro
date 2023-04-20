@@ -32,6 +32,8 @@ https://www.twilio.com/ja/blog/react-choose-functional-components-jp
 
 App が React 依存になってしまうのは、今回は許容。
 
+## 0_4 RxJS と連動させてみよう
+
 ## 1_1 サーバサイドと通信してみよう
 
 ページ内のコンテンツを、サーバサイド API と通信して更新する用にしてみよう
