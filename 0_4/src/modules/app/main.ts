@@ -12,6 +12,10 @@ export default class Main{
     return Main.instance;
   }
 
+  private get subjectOnUpdate(): Subject<any>{
+    return this.getSubject("onUpdate");
+  }
+
   private getSubject(name:string): Subject<any>{
     if(!this.subjects[name]){
       this.subjects[name] = new Subject();
@@ -20,10 +24,10 @@ export default class Main{
   }
 
   public test(){
-    this.getSubject("onUpdate").next(this.cnt++);
+    this.subjectOnUpdate.next(this.cnt++);
   }
 
   public subscribeUpdate(observer:any):void{
-    this.getSubject("onUpdate").subscribe(observer);
+    this.subjectOnUpdate.subscribe(observer);
   }
 }
