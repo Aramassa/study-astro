@@ -5,8 +5,8 @@ const m = Main.singleton();
 
 export const Button = ()=>{
 
-  const [count, setCount] = useState(null);
-  m.subscribeUpdate({
+  let [count, setCount] = useState();
+  count = m.subscribeUpdate({
     next: (e)=> setCount(e)
   })
 

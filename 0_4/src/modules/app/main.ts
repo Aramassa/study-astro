@@ -27,7 +27,8 @@ export default class Main{
     this.subjectOnUpdate.next(this.cnt++);
   }
 
-  public subscribeUpdate(observer:any):void{
+  public subscribeUpdate(observer:any): number{
     this.subjectOnUpdate.subscribe(observer);
+    return this.cnt;
   }
 }
